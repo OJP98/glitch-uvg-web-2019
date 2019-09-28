@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
+import React, { PureFunction } from 'react';
 import './style.css';
 
-export default class DiscButton extends Component {
-  render () {
+export default class DiscButton extends PureFunction {
+  render() {
     return (
       <div className="install">
-        <button type="install-button">Add DuckDuckGo to Firefox</button>
+        <button type="button">Add DuckDuckGo to Firefox</button>
       </div>
-    )
+    );
   }
 }
